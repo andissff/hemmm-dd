@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Valentine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <header class="hero" id="landing">
+    <div class="topbar">
+      <button id="darkToggle" class="icon-btn" aria-pressed="false">🌙</button>
+    </div>
+    <h1 class="title" id="pageTitle">Happy Valentine <span class="emoji">💖</span></h1>
+    <p class="subtitle" id="typing">Aku bikin ini khusus buat kamu…</p>
+    <div class="hero-actions">
+      <button id="enterBtn" class="btn primary">Masuk 💌</button>
+      <button id="randomMsg" class="btn ghost">Kirim Random 🎲</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="forYou" class="section for-you">
+      <h2 class="section-title">Untuk Kamu 💖</h2>
+
+      <div class="cards" role="list">
+        <article class="card" data-index="0" role="listitem">
+          <div class="card-front">Kartu 1 ☁️</div>
+          <div class="card-back">Makasih ya, kamu bikin hari biasa jadi nggak biasa 💕</div>
+        </article>
+        <article class="card" data-index="1" role="listitem">
+          <div class="card-front">Kartu 2 ✨</div>
+          <div class="card-back">Entah kenapa, ngobrol sama kamu selalu seru ✨</div>
+        </article>
+        <article class="card" data-index="2" role="listitem">
+          <div class="card-front">Kartu 3 🌸</div>
+          <div class="card-back">Kamu itu bikin aku senyum tanpa alasan 😌</div>
+        </article>
+      </div>
+
+      <div class="reaction-area">
+        <p class="question">Aku boleh jujur nggak?</p>
+        <div class="reactions">
+          <button class="react dodge" id="reactNo">Boleh 😳</button>
+          <button class="react" id="reactYes">Boleh Banget 💖</button>
+        </div>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="tl-item">Pertama kali kenal</div>
+        <div class="tl-item">Momen random tapi keinget</div>
+        <div class="tl-item">Hari ini 💌</div>
+      </div>
+
+      <div class="gallery">
+        <button class="icon" data-tip="Ngobrol sambil ngopi">☕</button>
+        <button class="icon" data-tip="Lagu yang selalu ingatkanmu">🎧</button>
+        <button class="icon" data-tip="Chat panjang sampai pagi">🌙</button>
+      </div>
+    </section>
+
+    <section id="reasons" class="section reasons">
+      <h2 class="section-title">Kenapa aku bikin ini?</h2>
+      <ul class="reasons-list" id="reasonsList">
+        <li>Karena kamu spesial</li>
+        <li>Karena kamu beda</li>
+        <li>Karena kamu layak dirayakan</li>
+      </ul>
+    </section>
+
+    <section id="final" class="section final">
+      <h2 class="section-title">Apapun jawabanmu…</h2>
+      <p class="final-text">Makasih udah baca sampai sini 💖</p>
+      <div class="final-actions">
+        <button id="lastBtn" class="btn primary">Senyum ya 😊</button>
+        <button id="musicToggle" class="btn ghost">Play music ▶️</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-panel">
+      <button id="modalClose" class="modal-close" aria-label="Tutup">×</button>
+      <h2 class="modal-title">Untukmu</h2>
+      <p class="modal-text">Makasih ya udah bikin hari-hariku lebih seru 💕</p>
+    </div>
+  </div>
+
+  <audio id="bgm" loop preload="auto">
+    <source src="" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
